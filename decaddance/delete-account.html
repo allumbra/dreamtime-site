@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request account deletion — Decaddance</title>
+  <style>
+    :root { color-scheme: light; }
+    body { margin: 0; color: #182443; background: #faf8f2;
+      font: 1rem/1.65 system-ui, sans-serif; }
+    main { max-width: 44rem; margin: auto; padding: 2rem 1.25rem 3rem; }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 2rem; }
+    a { color: #294b91; overflow-wrap: anywhere; }
+    .action { display: inline-block; padding: .75rem 1rem; background: #182443;
+      color: white; border-radius: .25rem; }
+    li { margin: .6rem 0; }
+    code { overflow-wrap: anywhere; }
+    footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #b7bdca; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Request deletion of your Decaddance account</h1>
+    <p>Decaddance · Dreamtime · Android app <code>com.decaddance.game</code></p>
+  </header>
+  <p>This page describes how to send a request to delete a Decaddance game account
+    and its associated cloud data. It is not an automatic deletion form.
+    You can send a request without reinstalling the game. Sending an email,
+    uninstalling the app or signing out does not itself erase server records.</p>
+
+  <h2>In-app game-data deletion</h2>
+  <p>Use Settings → Account &amp; privacy → Delete game account.
+    It identifies the signed-in game account and requires an acknowledgement
+    and separate confirmation. If the request cannot be completed in the app,
+    use the email route below.</p>
+  <p>The title-scoped operation removes Decaddance cloud saves, daily results,
+    leaderboard data and entitlement mirrors. Local game progress is also removed
+    on the requesting device. Google accounts and Google Play purchases are not
+    deleted or refunded. PlayFab retains its publisher identity, sign-in links
+    and PlayStream service-event history. The email route below also covers
+    requests concerning these records. Complimentary game access may
+    be lost; language, theme and audio preferences remain on the requesting
+    device.</p>
+
+  <h2>Send a Decaddance-specific request</h2>
+  <ol>
+    <li>Email <a href="mailto:support@dreamti.me?subject=Decaddance%20account%20deletion%20request">support@dreamti.me</a>
+      with the subject <strong>Decaddance account deletion request</strong>.</li>
+    <li>Say you are requesting deletion of your <strong>Decaddance PlayFab game
+      account and associated cloud data</strong>. Include the Android package
+      <code>com.decaddance.game</code>. A request for Decaddance should not be
+      treated as a request to delete a Patida or another Dreamtime game account.</li>
+    <li>If you already know your <strong>Decaddance game account ID</strong>,
+      include it. The signed-in app shows it in Settings → Account &amp; privacy,
+      but you do not need to reinstall the app to initiate a request. This is the game
+      account identifier, not your password, Google account ID or purchase token.
+      If you do not know it, say so; do not guess an ID. A gamer display name and
+      approximate play dates may help locate records but do not prove ownership.</li>
+    <li>Say whether you used more than one Google Play Games profile with
+      Decaddance, and which game account the request concerns. Mention any prior
+      display name that may help locate the correct account.</li>
+  </ol>
+  <p><a class="action" href="mailto:support@dreamti.me?subject=Decaddance%20account%20deletion%20request">Open an email request</a></p>
+  <p>If your device does not open an email app, copy the address and subject into
+    your preferred mail service.</p>
+
+  <h2>Protect your account information</h2>
+  <p><strong>Do not send passwords, authentication codes, PlayFab session tickets,
+    Google authorization codes, purchase tokens or full card/bank details.</strong>
+    A display name can change or resemble someone else's, and an email sender
+    address alone does not prove ownership of a Google-linked game account.
+    We verify account ownership before processing a request. We may ask for
+    additional information or offer an authenticated verification step; initiating
+    your request does not require installing the app.</p>
+
+  <h2>Identify the data you want deleted</h2>
+  <p>An account-and-associated-data request should cover the Decaddance cloud
+    account, private gameplay backups, daily completion/results, game statistics
+    and leaderboard entries, random installation identifiers stored with that
+    account, and account-associated product entitlements. This describes the
+    requested scope; it is not confirmation that processing has been completed.</p>
+  <p>If you are asking about only a particular game record instead of deleting
+    the account, describe that clearly. Do not assume that removing one saved
+    match also removes your account or other cloud data.</p>
+
+  <h2>Timing and records outside title deletion</h2>
+  <p>PlayFab processes title deletion asynchronously. A request acknowledgement
+    is not a completion receipt; processing can take several minutes or longer.
+    The app does not set an automatic inactivity expiry for cloud game records.
+    Title deletion excludes publisher-level identity, sign-in links and PlayStream
+    event history, and no fixed expiry is promised here for those records,
+    provider backups or support correspondence. For broader removal, we check
+    which game accounts share the provider identity. We explain the affected
+    games and obtain confirmation before a deletion that would remove data from
+    other games. If shared records must remain for accounts you are keeping, or
+    provider assistance is needed, we explain the remaining scope and next steps.</p>
+
+  <h2>Local files, purchases and provider accounts</h2>
+  <p>Local game files and device backups are separate from the cloud account.
+    Your device's uninstall, app-data and backup controls govern those copies.
+    Google Play purchase/refund records and your Google account are not deleted
+    by deleting Decaddance data. Use Google's own controls for Google-managed
+    data and transactions.</p>
+  <p>The automatic sign-in check restores existing accounts only. Explicitly
+    signing in again after a deletion can create new account records.
+    Deleting a Google Play Games profile or game data through Google does not
+    by itself delete the app's separate PlayFab account.</p>
+  <footer><a href="privacy.html">Decaddance Privacy Policy</a> ·
+    <a href="mailto:support@dreamti.me?subject=Decaddance%20privacy%20question">Contact support</a></footer>
+</main>
+</body>
+</html>
