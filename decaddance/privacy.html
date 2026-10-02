@@ -37,7 +37,7 @@
     remove local files, subject to your device's backup and restore settings.
     It does not itself delete cloud records.</p>
 
-  <h2>Google sign-in and your game account</h2>
+  <h2>Sign-in and your game account</h2>
   <p>Decaddance uses Google Play Games for authentication and Microsoft PlayFab
     for cloud game accounts. On Android, the game checks for an existing Play
     Games sign-in automatically. This can restore an existing Decaddance cloud
@@ -46,9 +46,13 @@
     Local guest play remains available without a cloud account.</p>
   <p>The account services handle player identifiers and Google Play Games gamer
     profile information, such as a display name and provider-supplied avatar
-    information. The game does not ask you for your Google password, a separate
-    app password or payment-card details. Google Play Games also processes SDK
+    information. The game does not ask you for your Google password or payment-card details. Google Play Games also processes SDK
     analytics and diagnostics under Google's policies and account controls.</p>
+  <p>Authorized reviewers can also sign in with a separately provided review
+    username and password. These credentials are sent securely to PlayFab to
+    authenticate the review account. Decaddance does not offer public
+    username-and-password registration and does not save the review password
+    to local settings.</p>
 
   <h2>Cloud saves, daily results and leaderboards</h2>
   <p>For authenticated players, Decaddance sends its random installation
@@ -80,7 +84,7 @@
     to request ads. Rewards in this version are recorded by the game locally.</p>
   <p>Google's advertising SDK can collect and share IP address information
     (including an estimate of general location), app interactions such as
-    launches, taps and video views, performance diagnostics, and device or
+    launches, taps and video views, performance diagnostics and SDK-related crash reports, and device or
     account-associated identifiers such as advertising ID and app-set ID.
     Google uses this information for advertising, analytics and fraud
     prevention. Choosing non-personalized ads does not necessarily stop this
