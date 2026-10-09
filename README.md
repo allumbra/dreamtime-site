@@ -10,7 +10,7 @@ Set `patidaTrailerUrl` in `assets/site-config.js` to a public HTTPS YouTube watc
 - Patida illustration: `../summazing/docs/store/patida-feature-graphic.png`.
 - Screenshots: `../summazing/docs/visual-previews/original.png` and `solved-next-phone.png`. These are labeled development previews.
 - Gameplay copy: `../summazing/docs/store/full-description-v2.md`.
-- Availability retains the original site's Coming soon to Google Play.
+- Platform label: For Android · iOS coming soon, as specified by the site owner. No store URL is configured.
 
 Assets are copied locally. Existing privacy pages, domain settings, advertising and Google verification files are preserved.
 
