@@ -15,3 +15,6 @@
 .landscape-hills{position:absolute;z-index:0;bottom:-1px;left:0;width:100%;height:clamp(155px,16.04vw,330px);pointer-events:none}
 .night-stars{position:absolute;inset:0;opacity:.75;background-image:radial-gradient(2px 2px at 8% 18%,#fff3df 75%,transparent),radial-gradient(1px 1px at 19% 52%,#fff3df 75%,transparent),radial-gradient(2px 2px at 31% 10%,#fff3df 75%,transparent),radial-gradient(1px 1px at 43% 62%,#fff3df 75%,transparent),radial-gradient(2px 2px at 68% 14%,#fff3df 75%,transparent),radial-gradient(1px 1px at 78% 46%,#fff3df 75%,transparent),radial-gradient(2px 2px at 94% 26%,#fff3df 75%,transparent),radial-gradient(1px 1px at 88% 67%,#fff3df 75%,transparent),radial-gradient(1px 1px at 12% 72%,#fff3df 75%,transparent)}
 @media(max-width:650px){.landscape{min-height:650px}.landscape-content{padding-top:135px;padding-bottom:200px}.landscape h1{width:100%;margin-bottom:24px}.landscape .eyebrow{font-size:.6rem;letter-spacing:.17em}.landscape-tagline{margin:35px 0}.landscape-hills{height:165px}}
+
+/* Keep navigation and privacy links aligned after removing the small wordmarks. */
+header.wrap,footer.wrap{justify-content:flex-end}
