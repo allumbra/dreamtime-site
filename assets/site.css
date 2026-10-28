@@ -18,3 +18,5 @@
 
 /* Keep navigation and privacy links aligned after removing the small wordmarks. */
 header.wrap,footer.wrap{justify-content:flex-end}
+.game-feature+.game-feature{margin-top:28px}
+.screenshots figure:nth-child(4){padding-top:48px}
