@@ -20,3 +20,44 @@
 header.wrap,footer.wrap{justify-content:flex-end}
 .game-feature+.game-feature{margin-top:28px}
 .screenshots figure:nth-child(4){padding-top:48px}
+
+/* What's new pages (shared by every game). */
+.news-intro{padding-top:40px;max-width:720px}
+.news-intro h1{font-size:clamp(3rem,6vw,5rem);letter-spacing:-.055em;margin-bottom:20px}
+.news-intro p:last-child{font-size:1.02rem;margin-bottom:0}
+.entry{border-top:1px solid var(--line);padding-block:56px;max-width:760px}
+.entry time{display:block;color:var(--copper);font-size:.78rem;letter-spacing:.08em;margin-bottom:12px}
+.entry h2{font-size:clamp(1.5rem,2.6vw,2rem);letter-spacing:-.03em;line-height:1.25;margin-bottom:20px}
+.entry ul{margin:0 0 28px;padding-left:20px}
+.entry li{color:var(--muted);font-size:.98rem;line-height:1.75;margin-bottom:10px}
+.entry li::marker{color:var(--copper)}
+.entry li:last-child{margin-bottom:0}
+.entry ul:last-child{margin-bottom:0}
+.shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:0}
+.shots figure{margin:0;min-width:0}
+.shots .wide{grid-column:span 2}
+.shots .wide img{width:auto}
+.shots a{display:block;border-radius:10px}
+.shots img{width:100%;border:1px solid #ffffff30;border-radius:10px;background:var(--surface)}
+.shots a:hover img{border-color:#e6a77a90}
+.shots figcaption{margin-top:10px}
+.news-end{border-top:1px solid var(--line);padding-block:40px;max-width:720px}
+.news-end p{font-size:.9rem;margin:0}
+.news-end a{border-bottom:1px solid #e6a77a80}
+@media(max-width:650px){.news .wrap{width:calc(100% - 32px)}.news-intro{padding-top:20px}.entry{padding-block:40px}.shots{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.shots .wide{grid-column:1/-1}}
+.news-intro .legend{font-size:.88rem;margin-top:16px}
+
+/* "You asked, we changed": mark a change that came from player feedback. */
+.asked{display:inline-block;background:#e6a77a22;color:var(--copper);border:1px solid #e6a77a70;border-radius:999px;padding:1px 9px;font-size:.7rem;font-weight:700;letter-spacing:.04em;vertical-align:1px;white-space:nowrap}
+footer div{flex-wrap:wrap;row-gap:10px}
+
+/* Talk to us: contact on every game page and the home page. */
+.contact{border-top:1px solid var(--line);display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.contact h2{margin-bottom:16px}
+.contact-ways{list-style:none;margin:0;padding:0;display:grid;gap:22px}
+.contact-ways li{border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.92rem;line-height:1.6}
+.contact-ways strong{display:block;color:var(--cream);font-size:1rem;margin-bottom:4px}
+.contact-ways a{color:var(--copper);border-bottom:1px solid #e6a77a80;overflow-wrap:anywhere}
+.contact .legend{grid-column:1/-1;font-size:.85rem;margin:0}
+@media(max-width:650px){.contact{grid-template-columns:1fr;gap:24px}}
+footer a{overflow-wrap:anywhere}
