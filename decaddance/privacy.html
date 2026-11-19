@@ -23,43 +23,78 @@
 <main>
   <header>
     <h1>Privacy Policy — Decaddance</h1>
-    <p class="meta">Effective October 2, 2026 · Updated November 18, 2026 · Android app
+    <p class="meta">Effective November 19, 2026 · Android and iOS apps
       <code>com.decaddance.game</code></p>
   </header>
-  <p>Decaddance is a Dreamtime game ("Dreamtime," "we," or "us"). This policy describes
-    information used by the Android game, its cloud features, Google Play
-    purchases and Google advertising services.</p>
+  <p>Decaddance is a game by Dreamtime LLC ("Dreamtime," "we," or "us"). This policy
+    describes the information used by the Decaddance apps for Android and iOS, their
+    cloud features, Google Play and App Store purchases and Google advertising
+    services. It replaces the version effective October 2, 2026.</p>
+  <p><strong>In short:</strong> you can play without an account. We collect only
+    what the game's features need. Every ad is non-personalized, the game does not
+    use your device's advertising ID, and we do not sell your personal
+    information. You can ask us to see or delete your data at
+    <a href="mailto:support@dreamti.me?subject=Decaddance%20privacy%20request">support@dreamti.me</a>.</p>
 
   <h2>Local play and information on your device</h2>
   <p>Local gameplay, settings, saved matches and access to game features are stored
     on your device. Decaddance generates a random installation identifier for
-    account synchronization; this is not your Android ID. Removing the app may
+    account synchronization; this is not your Android ID, the iOS identifier
+    for vendor or an advertising identifier. Removing the app may
     remove local files, subject to your device's backup and restore settings.
     It does not itself delete cloud records.</p>
 
   <h2>Sign-in and your game account</h2>
   <p>Decaddance uses Google Play Games for authentication and Microsoft PlayFab
-    for cloud game accounts. On Android, the game checks for an existing Play
+    for cloud game accounts. On Android, sign-in uses Google Play Games; on iPhone
+    and iPad it uses Game Center. Without signing in, the game plays as a local
+    guest, and the cloud features below apply only when a game account is signed
+    in. On Android, the game checks for an existing Play
     Games sign-in automatically. This can restore an existing Decaddance cloud
     account and start synchronization. Creating a new Decaddance cloud account
-    requires an explicit sign-in action; the automatic check does not create one. The one exception is the anonymous guest account described under Access codes below.
+    requires an action by you, either tapping a sign-in button or entering an
+    access code (see below); the automatic check does not create one.
     Local guest play remains available without a cloud account.</p>
+  <p><strong>Game Center (iOS).</strong> On iPhone and iPad, signing in is optional
+    and starts only when you tap a sign-in button; the game never opens Game
+    Center on your first launch. After you have signed in once, later launches
+    sign in again without asking. The game sends Apple's player identifier for
+    this app (an identifier Apple scopes to our developer account) and Apple's
+    sign-in proof to PlayFab, which checks it with Apple and uses it to find
+    your game account. The game does not read or send your Game Center name,
+    friends or profile. On leaderboards, Game Center players always appear under
+    an anonymous generated name.</p>
   <p>The account services handle player identifiers and Google Play Games gamer
     profile information, such as a display name and provider-supplied avatar
     information. The game does not ask you for your Google password or payment-card details. Google Play Games also processes SDK
     analytics and diagnostics under Google's policies and account controls.</p>
-  <p><strong>Access codes.</strong> Authorized app reviewers and testers can
-    enter an access code we give them in Settings. Without a signed-in account,
-    the game first creates an anonymous guest account with a random identifier
-    held on the device. The code is sent securely to PlayFab, which checks it
-    against stored one-way hashes of valid codes and, if it matches, records the
-    Full Game unlock on that account. Decaddance does not ask for a username or
-    password and does not offer public registration.</p>
+  <p><strong>Access codes and guest accounts.</strong> Authorized app reviewers and
+    testers can enter an access code we give them in Settings → Access code.
+    If you are not signed in, the game then creates an anonymous guest cloud
+    account for you. It uses a random identifier generated on your device and
+    kept only in the app's private storage; no name, email address, password or
+    device identifier is involved, and nothing is created unless you enter an
+    access code. The guest account is created when you submit the code, before
+    the code is checked, and the same identifier is reused for later tries. The code is sent securely to PlayFab, which
+    checks it against stored one-way hashes of valid codes and, if it matches,
+    records the Full Game unlock on that account. We keep how many times a code
+    was used and, for your account, which code you redeemed and any failed
+    attempts, so a code cannot be guessed or reused beyond its limit. If the code is
+    wrong, that account is not used and holds only the times of the failed
+    attempts; email <a href="mailto:support@dreamti.me?subject=Decaddance%20privacy%20request">support@dreamti.me</a>
+    to have it removed. A guest
+    account is a game account like any other: the cloud features in this policy
+    apply to it, you can later sign in with Google Play Games or Game Center,
+    and Settings → Delete game account removes it. Because the identifier is
+    the only key to a guest account, deleting the app's data without deleting
+    the account leaves the account in the cloud with no way for you to sign in
+    to it again. Decaddance does not ask for a username or password and does not
+    offer public registration.</p>
 
   <h2>Cloud saves, daily results and leaderboards</h2>
   <p>For authenticated players, Decaddance sends its random installation
-    identifier, account-associated product ownership, daily completion records,
-    results and progress to PlayFab. Cloud backups can include the game's
+    identifier, account-associated product ownership, token balance history,
+    daily completion records, results and progress to PlayFab. Cloud backups can include the game's
     commands and match snapshots, so play can be restored across sessions or
     devices. The app marks its uploaded replay backup records private.</p>
   <p>Leaderboards can show your score, rank and display name or a stable player
@@ -67,39 +102,72 @@
     A generated alias is a pseudonym, not a guarantee of anonymity. Private
     match backups are separate from these public leaderboard entries.</p>
 
-  <h2>Google Play purchases</h2>
-  <p>Google Play processes purchases. The native Billing integration receives
-    product ownership and purchase-status information and uses a purchase token
-    to acknowledge a purchase with Google. It supplies Google with an
-    obfuscated account identifier to associate the transaction with the game
-    account. Decaddance stores product access locally and synchronizes
-    account-associated entitlements through PlayFab.</p>
+  <h2>Purchases (Google Play and the App Store)</h2>
+  <p>Google Play processes purchases on Android and Apple's App Store on iOS.
+    The game receives product ownership and purchase-status information. On
+    Android it supplies Google with an obfuscated account identifier, and on iOS
+    it supplies Apple with a random app account token, to associate the
+    transaction with the game account. Before a purchase unlocks anything, the
+    game sends the store's purchase token (Google Play) or signed transaction
+    (App Store) with the signed-in game account to PlayFab, which checks it with
+    the store and records the verified product ownership. Decaddance stores
+    product access locally and synchronizes these verified entitlements through
+    PlayFab.</p>
   <p>Decaddance does not receive your full payment-card number or bank details.
-    Purchase records held by Google are subject to Google's policies. Deleting
-    game data does not request a refund or delete Google's transaction records.</p>
+    Purchase records held by Google and Apple are subject to their policies.
+    Deleting game data does not request a refund or delete the stores'
+    transaction records.</p>
 
-  <h2>Rewarded ads and ad privacy choices</h2>
-  <p>Decaddance uses Google AdMob for user-requested rewarded ads and Google's
-    User Messaging Platform to check applicable consent and privacy choices.
-    The consent information is refreshed when the game starts. Rewarded ad
-    initialization and loading follow an ad request and the SDK's permission
-    to request ads. Rewards in this version are recorded by the game locally.</p>
-  <p>Google's advertising SDK can collect and share IP address information
-    (including an estimate of general location), app interactions such as
-    launches, taps and video views, performance diagnostics and SDK-related crash reports, and device or
-    account-associated identifiers such as advertising ID and app-set ID.
-    Google uses this information for advertising, analytics and fraud
-    prevention. Choosing non-personalized ads does not necessarily stop this
-    processing.</p>
+  <h2 id="ads">Rewarded ads and ad privacy choices</h2>
+  <p>Decaddance uses Google AdMob for rewarded ads that you choose to watch, for
+    example to unlock another daily challenge, and Google's User Messaging
+    Platform to check applicable consent and privacy choices. The consent
+    information is refreshed when the game starts. Rewarded ad initialization
+    and loading follow your request for an ad and the SDK's permission to
+    request ads. Each finished rewarded ad adds a token to your game account.
+    The game records when a token was earned and what it was spent on (a daily
+    challenge, a practice game or a match level) so your balance is the same on
+    each of your devices; for signed-in players this record is stored with your
+    other game data in PlayFab and deleted with it. It contains no advertising
+    identifiers.</p>
+  <p><strong>Every ad is non-personalized,</strong> for every player in every
+    region, whatever choice is recorded in the consent form. Non-personalized
+    ads are chosen from context, such as the app and your general location,
+    rather than from a profile of your interests or activity in other apps.
+    The Android app does not request the advertising ID permission, so Google's
+    SDK cannot read your device's advertising ID through it. The iOS app does
+    not ask for App Tracking Transparency permission, so the SDK does not get
+    the iOS advertising identifier (IDFA).</p>
+  <p>Even for non-personalized ads, Google's advertising SDK can collect IP
+    address information (including an estimate of general location), app
+    interactions such as launches, taps and video views, performance
+    diagnostics and SDK-related crash reports, and device-scoped identifiers
+    that are not the advertising ID, such as Android's app set ID. Google uses
+    this information to serve and measure ads, limit how often an ad is shown,
+    and prevent fraud and abuse.</p>
   <p>Where required and available, use <strong>Settings → Ad privacy choices</strong>
-    to revisit the SDK-managed choices. Android's advertising settings also
-    provide advertising-ID controls. Google separately provides
+    to revisit the SDK-managed choices. Google separately provides
     <a href="https://myadcenter.google.com/">ad preference controls</a>.</p>
 
+  <h2 id="feedback">Feedback you send</h2>
+  <p>If you choose Settings → Send feedback, we receive the message you write, its
+    kind (bug, idea, question or other) and, unless you switch it off, the app
+    version, platform, device model, operating system, screen size, language and
+    a few settings. We remove email addresses, links, phone numbers and
+    addresses from the message on your device and again on our server, and we
+    ask you not to include personal details. Reports are kept in a private issue
+    tracker (GitHub, in the United States) until we remove them. A report carries no account
+    identifier, only a one-way (salted hash) code that groups reports from the same
+    account, which we cannot turn back into the account without our private key; PlayFab keeps a short record of your reports so we can
+    limit how many you send and delete it with your account. Email
+    <a href="mailto:support@dreamti.me?subject=Decaddance%20feedback%20removal">support@dreamti.me</a>
+    to have a report removed.</p>
+
   <h2>Service providers and uses of information</h2>
-  <p>Microsoft PlayFab hosts game-account, synchronization and leaderboard
-    services. Google provides Play Games authentication, Google Play billing,
-    advertising and consent services. Information is used to operate these
+  <p>Microsoft PlayFab hosts game-account, synchronization, purchase-verification
+    and leaderboard services. Google provides Play Games authentication, Google
+    Play billing, advertising and consent services. Apple provides Game Center
+    sign-in and App Store purchases. GitHub stores the feedback you choose to send. Information is used to operate these
     features, associate progress and entitlements with the correct account,
     restore game state, display leaderboard results and support the providers'
     security, diagnostics and advertising functions.</p>
@@ -109,7 +177,11 @@
     <li><a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a></li>
     <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
     <li><a href="https://policies.google.com/technologies/ads">Google advertising information</a></li>
+    <li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
   </ul>
+  <p>We do not sell your personal information, and we do not share it for
+    targeted (cross-context behavioral) advertising. We share information only
+    with the service providers named here, to run the game's features.</p>
   <p>If you contact support, your message and the information you choose to
     provide are used to understand the request, identify the relevant game
     account and communicate with you. Do not send passwords, sign-in codes,
@@ -152,14 +224,54 @@
     and <a href="https://myaccount.google.com/">Google Account</a>.
     Those controls do not by themselves delete a separate PlayFab game account.</p>
 
+  <h2 id="children">Children</h2>
+  <p>Decaddance is meant for players aged 13 and older. It is not directed to children under 13, and we do not knowingly
+    collect personal information from children under 13. Every ad is
+    non-personalized for every player. If you are a parent or guardian and
+    believe your child under 13 has created a Decaddance game account or given
+    us personal information, email
+    <a href="mailto:support@dreamti.me?subject=Decaddance%20child%20data%20request">support@dreamti.me</a>
+    and we will delete it.</p>
+
+  <h2 id="rights">Your privacy rights</h2>
+  <p>Wherever you live, you can ask us to tell you what information we hold
+    about your Decaddance game account, to give you a copy, to correct it or to
+    delete it. Email
+    <a href="mailto:support@dreamti.me?subject=Decaddance%20privacy%20request">support@dreamti.me</a>
+    and identify the game as Decaddance. We may need to confirm that the
+    account is yours before we act, and we will not treat you differently for
+    making a request.</p>
+  <p><strong>European Economic Area, United Kingdom and Switzerland.</strong>
+    Under the GDPR and the UK GDPR you also have the right to restrict or object
+    to our processing, and to receive your data in a portable format. We use
+    your information to provide the game and the features you ask for (such as
+    cloud saves, leaderboards and purchases), to keep the service secure and
+    prevent fraud, and to show ads in line with the choices you make in the
+    consent form, which you can change at any time in Settings. You can
+    complain to your local data protection authority. We answer requests within
+    one month.</p>
+  <p><strong>California and other US states.</strong> Under the California
+    Consumer Privacy Act (as amended by the CPRA) and similar state laws, you
+    have the right to know what personal information we collect, use and
+    disclose, and to request its deletion or correction. We do not sell or share
+    personal information for targeted advertising, so there is nothing to opt
+    out of. We do not use sensitive personal information to infer
+    characteristics about you. An authorized agent can make a request for you.
+    We answer requests within 45 days.</p>
+
   <h2>Security</h2>
   <p>The identified game cloud requests use HTTPS. Google's Mobile Ads and Play
     Games SDKs document encryption in transit for the data they collect.
     Account authentication protects access to account-associated game records.
     No method of transmission or storage provides an absolute security guarantee.</p>
 
+  <h2>Changes to this policy</h2>
+  <p>When the game starts collecting or using information in a new way, we
+    update this policy first and change its effective date. Features that need
+    personal data stay optional.</p>
+
   <h2>Contact</h2>
-  <p>For questions about Decaddance or its information handling, contact
+  <p>Dreamtime LLC, Washington, USA. For questions about Decaddance or its information handling, contact
     <a href="mailto:support@dreamti.me?subject=Decaddance%20privacy%20question">support@dreamti.me</a>.
     Identify the game as Decaddance so the request is not confused with another
     Dreamtime game.</p>
