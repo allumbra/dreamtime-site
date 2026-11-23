@@ -23,7 +23,7 @@
 <main>
   <header>
     <h1>Privacy Policy — Decaddance</h1>
-    <p class="meta">Effective November 19, 2026 · Android and iOS apps
+    <p class="meta">Effective November 22, 2026 · Android and iOS apps
       <code>com.decaddance.game</code></p>
   </header>
   <p>Decaddance is a game by Dreamtime LLC ("Dreamtime," "we," or "us"). This policy
@@ -49,19 +49,21 @@
     for cloud game accounts. On Android, sign-in uses Google Play Games; on iPhone
     and iPad it uses Game Center. Without signing in, the game plays as a local
     guest, and the cloud features below apply only when a game account is signed
-    in. On Android, the game checks for an existing Play
-    Games sign-in automatically. This can restore an existing Decaddance cloud
-    account and start synchronization. Creating a new Decaddance cloud account
+    in. When it starts, the game checks automatically for an existing Play
+    Games sign-in (Android) or Game Center sign-in (iPhone and iPad). This can
+    restore an existing Decaddance cloud account and start synchronization. Creating a new Decaddance cloud account
     requires an action by you, either tapping a sign-in button or entering an
     access code (see below); the automatic check does not create one.
     Local guest play remains available without a cloud account.</p>
-  <p><strong>Game Center (iOS).</strong> On iPhone and iPad, signing in is optional
-    and starts only when you tap a sign-in button; the game never opens Game
-    Center on your first launch. After you have signed in once, later launches
-    sign in again without asking. The game sends Apple's player identifier for
-    this app (an identifier Apple scopes to our developer account) and Apple's
-    sign-in proof to PlayFab, which checks it with Apple and uses it to find
-    your game account. The game does not read or send your Game Center name,
+  <p><strong>Game Center (iOS).</strong> On iPhone and iPad, signing in is optional.
+    The game never shows Apple's Game Center sign-in screen unless you tap a
+    sign-in button. If your device is already signed in to Game Center, the
+    automatic check at launch uses that sign-in (Apple may show its "Welcome
+    back" banner). The game then sends Apple's player identifier for this app
+    (an identifier Apple scopes to our developer account) and Apple's sign-in
+    proof to PlayFab, which checks it with Apple and uses it to find your game
+    account. If you have none, nothing is created until you tap a sign-in
+    button. The game does not read or send your Game Center name,
     friends or profile. On leaderboards, Game Center players always appear under
     an anonymous generated name.</p>
   <p>The account services handle player identifiers and Google Play Games gamer
