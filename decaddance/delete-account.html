@@ -88,6 +88,10 @@
   <h2>Timing and records outside title deletion</h2>
   <p>PlayFab processes title deletion asynchronously. A request acknowledgement
     is not a completion receipt; processing can take several minutes or longer.
+    The public copy of the leaderboards that signed-out players see is rebuilt on a
+    schedule, so a deleted account's name and score can stay on it until
+    the next successful rebuild after processing finishes, usually within a day but
+    sometimes longer. Email us to ask for a sooner rebuild.
     The app does not set an automatic inactivity expiry for cloud game records.
     Title deletion excludes publisher-level identity, sign-in links and PlayStream
     event history, and no fixed expiry is promised here for those records,
